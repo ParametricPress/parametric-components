@@ -1,0 +1,30 @@
+{
+  "name": "parametric-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "header.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src -d dist/cjs",
+    "build:es": "cross-env BABEL_ENV=es babel src -d dist/es",
+    "build": "npm run build:cjs && npm run build:es",
+    "dev": "concurrently \"yarn run build:es --watch\" \"yarn run build:cjs --watch\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "idyll-components": "^3.5.4"
+  }
+}
