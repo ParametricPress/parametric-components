@@ -1,5 +1,35 @@
 import React from 'react';
 
+const ARTICLES = [{
+  title: 'Bacone School',
+  author: 'James McGirk',
+  slug: 'bacone-school'
+}, {
+  title: 'Housing Equity',
+  author: 'Alyson Powell Key',
+  slug: 'housing-data-science'
+}, {
+  title: 'Particle Physics',
+  author: 'Riccardo Maria Bianchi',
+  slug: 'particle-physics'
+}, {
+  title: 'Death of the Compact Disc',
+  author: 'Adlan Jackson',
+  slug: 'death-of-the-compact-disc'
+}, {
+  title: 'On Dance',
+  author: 'Sam Petulla',
+  slug: 'on-dance'
+}, {
+  title: 'Deconstructing the JPEG',
+  author: 'Omar Shehata',
+  slug: 'deconstructing-the-jpeg'
+}, {
+  title: 'Bias in ML',
+  author: 'Shuyan Wu & Alice Feng',
+  slug: 'bias-in-machine-learning'
+}]
+
 class Nav extends React.PureComponent {
 
   constructor(props) {
@@ -37,10 +67,10 @@ class Nav extends React.PureComponent {
             marginTop: '0.5em',
             lineHeight: '32px'
           }}>
-            <div>
+            <a href="/" style={{color: 'black'}}>
               Issue 01<br/>
               Science + Society
-            </div>
+            </a>
             <div style={{cursor: 'pointer', zIndex: 1000}} onClick={this.handleContents}>
               Table of Contents
             </div>
@@ -59,91 +89,28 @@ class Nav extends React.PureComponent {
             overflow: 'auto',
             zIndex: 999
             }}>
-            <div style={{textAlign: 'right', fontSize: 32}}>
-              <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <div>
-                  <div style={{fontFamily: 'Graphik Web'}}>
-                    Decoding the JPEG
-                  </div>
-                  <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                    By Omar Shehata
-                  </div>
-                </div>
-                <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
-                  01
-                </div>
-              </div>
-            </div><div style={{textAlign: 'right', fontSize: 32}}>
-              <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <div>
-                  <div style={{fontFamily: 'Graphik Web'}}>
-                    Decoding the JPEG
-                  </div>
-                  <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                    By Omar Shehata
+
+            {
+              ARTICLES.map(({title, slug, author}, i) => {
+                return (
+                <div style={{textAlign: 'right', fontSize: 32}} key={title}>
+                  <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+                    <div>
+                      <div style={{fontFamily: 'Graphik Web'}}>
+                        <a style={{color: '#222'}} href={`../${slug}/`}>{title}</a>
+                      </div>
+                      <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
+                        By {author}
+                      </div>
+                    </div>
+                    <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
+                      0{i + 1}
+                    </div>
                   </div>
                 </div>
-                <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
-                  02
-                </div>
-              </div>
-            </div><div style={{textAlign: 'right', fontSize: 32}}>
-              <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <div>
-                  <div style={{fontFamily: 'Graphik Web'}}>
-                    Decoding the JPEG
-                  </div>
-                  <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                    By Omar Shehata
-                  </div>
-                </div>
-                <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
-                  03
-                </div>
-              </div>
-            </div><div style={{textAlign: 'right', fontSize: 32}}>
-              <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <div>
-                  <div style={{fontFamily: 'Graphik Web'}}>
-                    Decoding the JPEG
-                  </div>
-                  <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                    By Omar Shehata
-                  </div>
-                </div>
-                <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
-                  04
-                </div>
-              </div>
-            </div><div style={{textAlign: 'right', fontSize: 32}}>
-              <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <div>
-                  <div style={{fontFamily: 'Graphik Web'}}>
-                    Decoding the JPEG
-                  </div>
-                  <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                    By Omar Shehata
-                  </div>
-                </div>
-                <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
-                  05
-                </div>
-              </div>
-            </div><div style={{textAlign: 'right', fontSize: 32}}>
-              <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <div>
-                  <div style={{fontFamily: 'Graphik Web'}}>
-                    Decoding the JPEG
-                  </div>
-                  <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                    By Omar Shehata
-                  </div>
-                </div>
-                <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
-                  06
-                </div>
-              </div>
-            </div>
+                )
+              })
+            }
           </div>
       </div>
     )
