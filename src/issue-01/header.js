@@ -14,13 +14,8 @@ class Header extends React.PureComponent {
     const {longTitle, ...props} = this.props;
     return (
       <div className={'article-header'} style={{marginTop: 0}}>
-        <div style={{
-          display: 'flex',
-          width: '100vw',
-          position: 'relative',
-          top: '4em'
-        }}>
-          <div style={{position: 'relative', height: 520, zIndex: 2}}>
+        <div className="parametric-header-text">
+          <div className="parametric-header-hed" style={{position: 'relative', zIndex: 2}}>
             <TextContainer {...props}>
               <div style={{position: 'relative', width: 720}}>
                 <div style={{position: 'absolute', width: '100%', left: '-5em'}}>
@@ -35,7 +30,7 @@ class Header extends React.PureComponent {
                       }
                     </h1>
                 </div>
-                <div style={{width: 720, maxWidth: 720, position: 'relative', top: 120, fontSize: '12px', lineHeight: '20px', color: '#4801FF', fontFamily: 'Silkscreen'}}>
+                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', color: '#4801FF', fontFamily: 'Silkscreen'}}>
                   <div>
                     <div style={{fontWeight: 900, fontFamily: 'Graphik Web', fontSize: 48, lineHeight: '64px'}}>
                       {formatTitle(this.props.longTitle)}

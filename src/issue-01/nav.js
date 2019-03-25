@@ -48,24 +48,18 @@ class Nav extends React.PureComponent {
 
   render() {
     return (
-      <div style={{
-        marginTop: 25,
-        marginLeft: 50,
-        marginRight: 50,
-        zIndex: 1000}}>
+      <div className="parametric-article-nav">
           <div>
             {/* <div style={{fontFamily:'Bluu', textDecoration: 'none'}}>Parametric Press</div> */}
             <img src="static/images/logo.png" style={{display: 'inline', width:238}} />
           </div>
-          <div style={{
+          <div className="parametric-nav-links" style={{
             display: 'flex',
             width: '100%',
             justifyContent: 'space-between',
-            fontSize: 32,
             fontFamily: 'Graphik Web',
             textDecoration: 'underline',
-            marginTop: '0.5em',
-            lineHeight: '32px'
+            marginTop: '0.5em'
           }}>
             <a href="/" style={{color: 'black'}}>
               Issue 01<br/>
