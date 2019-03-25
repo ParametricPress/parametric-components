@@ -84,7 +84,7 @@ class Header extends React.PureComponent {
           </h1>
         </div>
         <TextContainer {...props}>
-          <div style={{fontFamily: 'Graphik Web', fontSize: 32, line: 48}}>
+          <div className="parametric-article-dek" style={{fontFamily: 'Graphik Web'}}>
             {this.props.dek}
           </div>
         </TextContainer>
