@@ -42,7 +42,7 @@ class Header extends React.PureComponent {
                   <div style={{display: 'flex', flexDirection: 'row'}}>
                     <div>
                       <div style={{fontWeight: 'bold'}}>
-                        Created By
+                        Created by
                       </div>
                       <div>
                         {
@@ -59,7 +59,7 @@ class Header extends React.PureComponent {
                       <div>
                         <a>Source Code</a><br/>
                         <a>Offline Archive</a><br/>
-                        {/* <a>DOI</a> */}
+                        <a>DOI</a>
                       </div>
                     </div>
                   </div>

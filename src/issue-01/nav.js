@@ -1,34 +1,5 @@
 import React from 'react';
-
-const ARTICLES = [{
-  title: 'Bacone School',
-  author: 'James McGirk',
-  slug: 'bacone-school'
-}, {
-  title: 'Housing Equity',
-  author: 'Alyson Powell Key',
-  slug: 'housing-data-science'
-}, {
-  title: 'Particle Physics',
-  author: 'Riccardo Maria Bianchi',
-  slug: 'particle-physics'
-}, {
-  title: 'Death of the Compact Disc',
-  author: 'Adlan Jackson',
-  slug: 'death-of-the-compact-disc'
-}, {
-  title: 'On Dance',
-  author: 'Sam Petulla',
-  slug: 'on-dance'
-}, {
-  title: 'Deconstructing the JPEG',
-  author: 'Omar Shehata',
-  slug: 'deconstructing-the-jpeg'
-}, {
-  title: 'Bias in ML',
-  author: 'Shuyan Wu & Alice Feng',
-  slug: 'bias-in-machine-learning'
-}]
+import ARTICLES from './articles';
 
 class Nav extends React.PureComponent {
 
@@ -65,39 +36,43 @@ class Nav extends React.PureComponent {
               Issue 01<br/>
               Science + Society
             </a>
-            <div style={{cursor: 'pointer', zIndex: 1000}} onClick={this.handleContents}>
+            <div className='parametric-nav-toc' style={{cursor: 'pointer'}} onClick={this.handleContents}>
               Table of Contents
             </div>
 
           </div>
-          <div style={{
-            display: this.state.showContent ? 'block' : 'none',
+          <div className="parametric-issue-toc" style={{
+            // display: this.state.showContent ? 'block' : 'none',
             position: 'fixed',
             width: 500,
-            right: 0,
+            right: this.state.showContent ? 0 : -500,
             top: 0,
             bottom: 0,
-            padding: '2em',
-            paddingTop: '8em',
+            padding: '1em',
+            paddingTop: '2em',
             background: '#FFE533',
             overflow: 'auto',
-            zIndex: 999
+            maxWidth: '100vw',
+            zIndex: 999,
+            transition: 'all 0.75s'
             }}>
-
+            <div onClick={this.handleContents} style={{ cursor: 'pointer', textAlign: 'right', textDecoration: 'underline', fontFamily: 'Graphik Web', marginBottom: '1em' }}>
+              Table of Contents
+            </div>
             {
               ARTICLES.map(({title, slug, author}, i) => {
                 return (
-                <div style={{textAlign: 'right', fontSize: 32}} key={title}>
-                  <div style={{marginBottom: '2em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+                <div style={{textAlign: 'right'}} key={title}>
+                  <div style={{marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                     <div>
-                      <div style={{fontFamily: 'Graphik Web'}}>
+                      <div style={{fontFamily: 'Graphik Web', fontWeight: 500}}>
                         <a style={{color: '#222'}} href={`../${slug}/`}>{title}</a>
                       </div>
-                      <div style={{fontStyle: 'italic', fontWeight: 300, fontFamily: 'Graphik Web'}}>
-                        By {author}
+                      <div style={{fontStyle: 'italic', fontWeight: 400, fontFamily: 'Graphik Web'}}>
+                        {author}
                       </div>
                     </div>
-                    <div style={{marginLeft: '1em', fontFamily: 'Graphik Web'}}>
+                    <div style={{marginLeft: '1em', fontFamily: 'Graphik Web', fontWeight: 500}}>
                       0{i + 1}
                     </div>
                   </div>
