@@ -11,7 +11,7 @@ const formatTitle = (title) => {
 }
 class Header extends React.PureComponent {
   render() {
-    const {longTitle, ...props} = this.props;
+    const {longTitle, headerImage, ...props} = this.props;
     return (
       <div className={'article-header'} style={{marginTop: 0}}>
         <div className="parametric-header-text">
@@ -68,7 +68,7 @@ class Header extends React.PureComponent {
             </TextContainer>
           </div>
           <div className='parametric-header-image' style={{position: 'relative', top: 150}}>
-            <img src="static/images/jpeg.png" />
+            <img src={this.props.headerImage ? this.props.headerImage : 'static/images/jpeg.png'} />
           </div>
           {/* <div style={{position: 'absolute', top: 0, right: 0}}> */}
           {/* </div> */}
