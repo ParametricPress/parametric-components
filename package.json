@@ -25,6 +25,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "idyll-components": "^3.5.4"
+    "idyll-components": "^3.5.4",
+    "react-tooltip": "^3.10.0"
   }
 }
