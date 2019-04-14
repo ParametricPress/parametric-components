@@ -32,7 +32,7 @@ class Header extends React.PureComponent {
                 </div>
                 <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', color: '#4801FF', fontFamily: 'Silkscreen'}}>
                   <div>
-                    <div style={{fontWeight: 900, fontFamily: 'Graphik Web', fontSize: 48, lineHeight: '64px'}}>
+                    <div className="parametric-long-title" >
                       {formatTitle(this.props.longTitle)}
                     </div>
                     <div>
@@ -57,8 +57,8 @@ class Header extends React.PureComponent {
                         Metadata
                       </div>
                       <div>
-                        <a>Source Code</a><br/>
-                        <a>Offline Archive</a><br/>
+                        <a href={this.props.source}>Source Code</a><br/>
+                        <a href={this.props.archive}>Offline Archive</a><br/>
                         <a>DOI</a>
                       </div>
                     </div>
