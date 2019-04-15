@@ -18,14 +18,13 @@ class Footer extends React.Component {
         <div>
           <form
             style={{
-              padding: 3,
-              textAlign: 'right'
+              padding: 3
             }}
             action="https://tinyletter.com/parametricpress"
             method="post"
             target="popupwindow"
             onSubmit="window.open('https://tinyletter.com/parametricpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-            <label htmlFor="tlemail" style={{fontSize: 23}}>
+            <label htmlFor="tlemail">
               Subscribe to our newsletter
             </label>
             <br/>
