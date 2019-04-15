@@ -1,8 +1,8 @@
 
 const ARTICLES = [{
-  title: 'Bacone School',
-  author: 'James McGirk',
-  slug: 'bacone-school'
+  title: 'The Myth of the Impartial Machine',
+  author: 'Shuyan Wu & Alice Feng',
+  slug: 'bias-in-machine-learning'
 }, {
   title: 'Housing Equity',
   author: 'Alyson Powell Key',
@@ -22,13 +22,13 @@ const ARTICLES = [{
 //   slug: 'on-dance'
 // },
 {
-  title: 'Deconstructing the JPEG',
+  title: 'Unraveling the JPEG',
   author: 'Omar Shehata',
   slug: 'deconstructing-the-jpeg'
 }, {
-  title: 'Bias in ML',
-  author: 'Shuyan Wu & Alice Feng',
-  slug: 'bias-in-machine-learning'
+  title: 'Bacone School',
+  author: 'James McGirk',
+  slug: 'bacone-school'
 }]
 
 module.exports = ARTICLES;

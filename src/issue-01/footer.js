@@ -23,7 +23,7 @@ class Footer extends React.Component {
             action="https://tinyletter.com/parametricpress"
             method="post"
             target="popupwindow"
-            onSubmit="window.open('https://tinyletter.com/parametricpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+            onSubmit={() => { window.open('https://tinyletter.com/parametricpress', 'popupwindow', 'scrollbars=yes,width=800,height=600'); return true }}>
             <label htmlFor="tlemail">
               Subscribe to our newsletter
             </label>

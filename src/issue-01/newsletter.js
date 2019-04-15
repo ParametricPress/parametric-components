@@ -21,7 +21,7 @@ class Newsletter extends React.Component {
           action="https://tinyletter.com/parametricpress"
           method="post"
           target="popupwindow"
-          onSubmit="window.open('https://tinyletter.com/parametricpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          onSubmit={() => {window.open('https://tinyletter.com/parametricpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true}}>
           <p>
             <label htmlFor="tlemail">
               Enter your email address:

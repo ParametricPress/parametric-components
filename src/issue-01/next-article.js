@@ -11,12 +11,11 @@ class CustomComponent extends React.Component {
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
     return (
-      <div className="parametric-recirc">
-        <a>Next<br/>Article</a>
-
-        <div>
-
-        </div>
+      <div className="parametric-recirc-next-article">
+        <span>Read the next article</span><br/>
+        <a>
+          The Myth of the Impartial Machine
+        </a>
       </div>
     );
   }
