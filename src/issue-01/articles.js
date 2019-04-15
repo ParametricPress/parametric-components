@@ -12,9 +12,9 @@ const ARTICLES = [{
   author: 'Riccardo Maria Bianchi',
   slug: 'particle-physics'
 }, {
-  title: 'Bombs in Southeast Asia',
+  title: 'Anything That Flies, On Anything That Moves',
   author: 'Megan Vo',
-  slug: 'bombing-se-asia'
+  slug: 'anything-that-flies-anything-that-moves'
 },
 // {
 //   title: 'On Dance',

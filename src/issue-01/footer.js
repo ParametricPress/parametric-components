@@ -1,7 +1,7 @@
 
 const React = require('react');
 
-class CustomComponent extends React.Component {
+class Footer extends React.Component {
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
     return (
@@ -40,4 +40,4 @@ class CustomComponent extends React.Component {
   }
 }
 
-module.exports = CustomComponent;
+module.exports = Footer;
