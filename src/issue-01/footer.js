@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
       <div className="parametric-footer">
         <div>
-          <img src="static/images/logo-bg-dark.png" />
+          <img src="/static/images/logo-bg-dark.png" />
           <div>
             About The Parametric Press
           </div>
