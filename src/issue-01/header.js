@@ -67,9 +67,9 @@ class Header extends React.PureComponent {
               </div>
             </TextContainer>
           </div>
-          <div className='parametric-header-image' style={{position: 'relative', top: 150}}>
+          {/* <div className='parametric-header-image' style={{position: 'relative', top: 150}}>
             <img src={this.props.headerImage ? this.props.headerImage : 'static/images/jpeg.png'} />
-          </div>
+          </div> */}
           {/* <div style={{position: 'absolute', top: 0, right: 0}}> */}
           {/* </div> */}
           <h1 className="hed-rotate">
