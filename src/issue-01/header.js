@@ -35,7 +35,7 @@ class Header extends React.PureComponent {
                     <div className="parametric-long-title" >
                       {formatTitle(this.props.longTitle)}
                     </div>
-                    <div style={{fontSize: 16, fontWeight: 'bold', marginTop: '2em', marginBottom: '3em'}}>
+                    <div style={{fontSize: 16, fontWeight: 'bold', marginTop: 0, marginBottom: '2em'}}>
                       {props.date}
                     </div>
                   </div>
@@ -46,8 +46,8 @@ class Header extends React.PureComponent {
                       </div>
                       <div>
                         {
-                          this.props.authors.map(({name, role}) => {
-                            return <div key={name}><a>{name}</a>, {role}</div>
+                          this.props.authors.map(({name, role, url}) => {
+                            return <div key={name}><a href={url}>{name}</a>, {role}</div>
                           })
                         }
                       </div>
