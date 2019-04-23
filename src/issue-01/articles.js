@@ -24,7 +24,7 @@ const ARTICLES = [{
 {
   title: 'Unraveling the JPEG',
   author: 'Omar Shehata',
-  slug: 'deconstructing-the-jpeg'
+  slug: 'unraveling-the-jpeg'
 }, {
   title: 'Bacone School',
   author: 'James McGirk',

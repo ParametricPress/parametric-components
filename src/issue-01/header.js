@@ -18,7 +18,7 @@ class Header extends React.PureComponent {
           <div className="parametric-header-hed" style={{position: 'relative', zIndex: 2}}>
             <TextContainer {...props}>
               <div style={{position: 'relative', width: 720}}>
-                <div style={{position: 'absolute', width: '100%', left: '-5em'}}>
+                <div style={{position: 'absolute', width: '100%', left: '-3em'}}>
                     <h1 className={'hed'}>
                       {
                         formatTitle(this.props.title)
@@ -30,16 +30,16 @@ class Header extends React.PureComponent {
                       }
                     </h1>
                 </div>
-                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', color: '#4801FF', fontFamily: 'Silkscreen'}}>
+                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px'}}>
                   <div>
                     <div className="parametric-long-title" >
                       {formatTitle(this.props.longTitle)}
                     </div>
-                    <div>
+                    <div style={{fontSize: 16, fontWeight: 'bold', marginTop: '2em', marginBottom: '3em'}}>
                       {props.date}
                     </div>
                   </div>
-                  <div style={{display: 'flex', flexDirection: 'row'}}>
+                  <div style={{display: 'flex', flexDirection: 'row', color: '#4801FF', fontSize: 12, fontWeight: 500}}>
                     <div>
                       <div style={{fontWeight: 'bold'}}>
                         Created by
@@ -47,7 +47,7 @@ class Header extends React.PureComponent {
                       <div>
                         {
                           this.props.authors.map(({name, role}) => {
-                            return <div key={name}><a>{name}</a> {role}</div>
+                            return <div key={name}><a>{name}</a>, {role}</div>
                           })
                         }
                       </div>
