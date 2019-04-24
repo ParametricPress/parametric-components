@@ -38,7 +38,7 @@ const ARTICLES = [{
   description: 'JPEG images are everywhere in our digital lives, but behind the veil of familiarity lie algorithms that remove details that are imperceptible to the human eye. This produces the highest visual quality with the smallest file size—but what does that look like? Let\'s see what our eyes can\'t see!',
 }, {
   title: 'Flatland Folly: An Adjunct Simulator',
-  titleBreaks: ['Flatland Folly: Adjunct Simulator', 'An Adjunct Simulator'],
+  titleBreaks: ['Flatland Folly:', 'An Adjunct Simulator'],
   author: 'James McGirk',
   slug: 'bacone-school',
   description: 'This Native American college used to be one of the best in the country. Fifty years later the campus is destitute, they can\'t pay professors, and it\'s filled with dusty, decaying art.',
