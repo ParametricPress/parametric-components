@@ -35,7 +35,7 @@ const ARTICLES = [{
   titleBreaks: ['Unraveling the JPEG'],
   author: 'Omar Shehata',
   slug: 'unraveling-the-jpeg',
-  description: 'JPEG images are everywhere in our digital lives, but behind the veil of familiarity lie algorithms that remove details that are imperceptible to the human eye. This produces the highest visual quality with the smallest file size—but what does that look like? Let\'s see what our eyes can\'t see!',
+  description: 'JPEG images are everywhere in our digital lives, but behind the veil of familiarity lie algorithms that remove details that are imperceptible to the human eye. Let\'s see what our eyes can\'t see!',
 }, {
   title: 'Flatland Folly: An Adjunct Simulator',
   titleBreaks: ['Flatland Folly:', 'An Adjunct Simulator'],
