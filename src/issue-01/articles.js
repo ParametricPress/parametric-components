@@ -41,7 +41,7 @@ const ARTICLES = [{
   titleBreaks: ['Flatland Folly:', 'An Adjunct Simulator'],
   author: 'James McGirk',
   slug: 'bacone-school',
-  description: 'This Native American college used to be one of the best in the country. Fifty years later the campus is destitute, they can\'t pay professors, and it\'s filled with dusty, decaying art.',
+  description: 'This Native American college used to be one of the best in the country. Fifty years later the campus is destitute, they can\'t pay professors, and it\'s filled with decaying art.',
 }]
 
 module.exports = ARTICLES;

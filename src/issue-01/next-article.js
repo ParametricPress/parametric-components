@@ -5,8 +5,10 @@ class CustomComponent extends React.Component {
 
   getNextArticle() {
     const idx = ARTICLES.findIndex((element) => {
-      return element.slug = this.props.slug
+      return element.slug === this.props.slug
     });
+
+    console.log(idx);
 
     const len = ARTICLES.length;
     return ARTICLES[((idx + 1) % len)];
