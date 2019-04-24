@@ -1,6 +1,15 @@
 import React from 'react';
 import ARTICLES from './articles';
 
+const formatTitle = (title) => {
+  return title.reduce((memo, str, i) => {
+    if (i < title.length - 1) {
+      return memo.concat([<span key={str}>{str}</span>, <br key={i} />]);
+    }
+    return memo.concat([<span key={str}>{str}</span>]);
+  }, [])
+}
+
 class Nav extends React.PureComponent {
 
   constructor(props) {
@@ -60,13 +69,13 @@ class Nav extends React.PureComponent {
               Table of Contents
             </div>
             {
-              ARTICLES.map(({title, slug, author}, i) => {
+              ARTICLES.map(({title, titleBreaks, slug, author}, i) => {
                 return (
-                <div style={{textAlign: 'right'}} key={title}>
+                <div style={{textAlign: 'right'}} key={slug}>
                   <div style={{marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                     <div>
                       <div style={{fontFamily: 'Graphik Web', fontWeight: 500}}>
-                        <a style={{color: '#222'}} href={`../${slug}/`}>{title}</a>
+                        <a style={{color: '#222'}} href={`../${slug}/`}>{formatTitle(titleBreaks)}</a>
                       </div>
                       <div style={{fontStyle: 'italic', fontWeight: 400, fontFamily: 'Graphik Web'}}>
                         {author}
