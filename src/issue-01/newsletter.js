@@ -27,11 +27,9 @@ class Newsletter extends React.Component {
               Enter your email address:
             </label>
           </p> */}
-          <p>
-            <input type="text" style={{width: '100%', padding: '0.5em'}} name="email" id="tlemail" placeholder="Enter your email address." />
-          </p>
+          <input type="text" style={{width: '100%', padding: '0.5em', margin: 0}} name="email" id="tlemail" placeholder="Enter your email address." />
           <input type="hidden" value="1" name="embed"/>
-          <input type="submit" value="Subscribe" style={{background: '#c5c5c5', color: '#222222'}} />
+          <input type="submit" value="Subscribe" style={{background: '#c5c5c5', color: '#222222', width: '100%'}} />
         </form>
       </div>
       <hr style={{margin: '12px 0', height: 1}} />
