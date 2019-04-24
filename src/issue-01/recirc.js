@@ -7,9 +7,6 @@ class Recirc extends React.Component {
     const idx = ARTICLES.findIndex((element) => {
       return element.slug === this.props.slug
     });
-
-    console.log('slug', this.props.slug, idx);
-
     const len = ARTICLES.length;
     const f = (n) => {
       return ARTICLES[(n % len)];
