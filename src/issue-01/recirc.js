@@ -34,7 +34,7 @@ class Recirc extends React.Component {
             this.getArticles().map((article) => {
               return (
                 <div key={article.slug}>
-                  <a style={{color: '#222'}} href={article.slug}>
+                  <a style={{color: '#222'}} href={`../${article.slug}/`}>
                     <div style={{fontWeight: 500, marginTop: '1em'}}>
                       {article.title}
                     </div>

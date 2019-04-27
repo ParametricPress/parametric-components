@@ -23,7 +23,7 @@ const ARTICLES = [{
   titleBreaks: ['Anything That Flies,', 'On Anything That Moves'],
   author: 'Megan Vo',
   slug: 'anything-that-flies-anything-that-moves',
-  description: 'TK Description'
+  description: 'The US covertly launched over two million bombing missions over Southeast Asian countries in the 1960s and 70s. Dig into the data behind this covert seige.'
 },
 // {
 //   title: 'On Dance',

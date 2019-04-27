@@ -10,10 +10,10 @@ class Footer extends React.Component {
           <img src="/static/images/logo-bg-dark.png" />
           <div style={{display: 'flex', direction: 'row', columnGap: '1em'}}>
             <div>
-              About
+              <a style={{color: 'white', textDecoration: 'none'}} href="https://parametric.press/about/">About</a>
             </div>
             <div>
-              Twitter
+              <a style={{color: 'white', textDecoration: 'none'}} href="https://twitter.com/parametricpress">Twitter</a>
             </div>
             <div>
               Subscribe
