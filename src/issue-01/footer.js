@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
       <div className="parametric-footer">
         <div>
-          <img src="/static/images/logo-bg-dark.png" />
+          <img src="/issue-01/static/images/logo-bg-dark.png" />
           <div className="parametric-footer-link-container">
             <div>
               <a style={{color: 'white', textDecoration: 'none'}} href="/about/">About</a>

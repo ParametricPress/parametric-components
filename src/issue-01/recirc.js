@@ -22,7 +22,7 @@ class Recirc extends React.Component {
         <hr style={{margin: 0, marginTop: 12, height: 4, marginBottom: 12}} />
         <div style={{display: 'flex', flexDirection: 'row'}}>
           <div style={{width: 60, marginRight: '2em', transform: 'rotate(-20deg)'}}>
-            <img style={{width: '100%', margin: 0, position: 'relative', top: 6}} src="static/images/diamond.png" />
+            <img style={{width: '100%', margin: 0, position: 'relative', top: 6}} src="/issue-01/static/images/diamond.png" />
           </div>
           <div style={{fontSize: 22, lineHeight: 1.2}}>
             More from the Parametric Press
@@ -34,7 +34,7 @@ class Recirc extends React.Component {
             this.getArticles().map((article) => {
               return (
                 <div key={article.slug}>
-                  <a style={{color: '#222'}} href={`../${article.slug}/`}>
+                  <a style={{color: '#222'}} href={`/issue-01/${article.slug}/`}>
                     <div style={{fontWeight: 500, marginTop: '1em'}}>
                       {article.title}
                     </div>

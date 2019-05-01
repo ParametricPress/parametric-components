@@ -31,7 +31,7 @@ class Nav extends React.PureComponent {
       <div className="parametric-article-nav">
           <div>
             {/* <div style={{fontFamily:'Bluu', textDecoration: 'none'}}>Parametric Press</div> */}
-            <img src="/static/images/logo-nav.png" style={{display: 'inline', width:238}} />
+            <img src="/issue-01/static/images/logo-nav.png" style={{display: 'inline', width:238}} />
           </div>
           <div className="parametric-nav-links" style={{
             display: 'flex',
@@ -75,7 +75,7 @@ class Nav extends React.PureComponent {
                   <div style={{marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                     <div>
                       <div style={{fontFamily: 'Graphik Web', fontWeight: 500}}>
-                        <a style={{color: '#222'}} href={`../${slug}/`}>{formatTitle(titleBreaks)}</a>
+                        <a style={{color: '#222'}} href={`/issue-01/${slug}/`}>{formatTitle(titleBreaks)}</a>
                       </div>
                       <div style={{fontStyle: 'italic', fontWeight: 400, fontFamily: 'Graphik Web'}}>
                         {author}
@@ -89,6 +89,13 @@ class Nav extends React.PureComponent {
                 )
               })
             }
+            <div style={{textAlign: 'right'}}>
+              <div style={{marginTop: '2em', marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
+                <div style={{fontFamily: 'Graphik Web', fontWeight: 500}}>
+                  <a style={{color: '#222'}} href={`/about/`}>About Us</a>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
     )

@@ -47,7 +47,7 @@ class Header extends React.PureComponent {
                       <div>
                         {
                           this.props.authors.map(({name, role, url}) => {
-                            return <div key={name}><a href={url}>{name}</a>, {role}</div>
+                            return <div key={name}><a href={url}>{name}</a></div>
                           })
                         }
                       </div>
@@ -59,7 +59,7 @@ class Header extends React.PureComponent {
                       <div>
                         <a href={this.props.source}>Source Code</a><br/>
                         <a href={this.props.archive}>Offline Archive</a><br/>
-                        <a>DOI</a>
+                        <a href={this.props.doi}>DOI</a>
                       </div>
                     </div>
                   </div>
