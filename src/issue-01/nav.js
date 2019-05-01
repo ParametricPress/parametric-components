@@ -31,7 +31,7 @@ class Nav extends React.PureComponent {
       <div className="parametric-article-nav">
           <div>
             {/* <div style={{fontFamily:'Bluu', textDecoration: 'none'}}>Parametric Press</div> */}
-            <img src="/issue-01/static/images/logo-nav.png" style={{display: 'inline', width:238}} />
+            <a href="/"><img src="/issue-01/static/images/logo-nav.png" style={{display: 'inline', width:238}} /></a>
           </div>
           <div className="parametric-nav-links" style={{
             display: 'flex',
