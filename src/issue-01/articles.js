@@ -11,13 +11,13 @@ const ARTICLES = [
   titleBreaks: ['The Myth of the', 'Impartial Machine'],
   author: 'Alice Feng & Shuyan Wu',
   slug: 'the-myth-of-the-impartial-machine',
-  description: 'Lost amidst the rush to deploy artificially intelligent software are incidents where probabilistic models have produced shockingly flawed results.',
+  description: 'Wide-ranging applications of data science bring utopian proposals of a world free from bias, but in reality, machine learning models reproduce the inequalities that shape the data they’re fed. Can programmers free their models from prejudice?',
 }, {
-  title: 'The Data Science of Housing Equity',
-  titleBreaks: ['The Data Science', 'of Housing Equity'],
+  title: 'Data Science for Fair Housing',
+  titleBreaks: ['Data Science', 'for Fair Housing'],
   author: 'Alyson Powell Key',
   slug: 'the-data-science-of-housing-equity',
-  description: "Researchers are using the power of data science to study the effectiveness of an anti-displacement housing program for one city's most vulnerable residents.",
+  description: "Cities across America covertly exclude racial minorities from majority-white residential neighborhoods, while gentrification drives people of color out of their homes. In Atlanta, a new nonprofit seeks to resist displacement by supporting the city’s most vulnerable residents—but how effective is their project?",
 }, {
   title: 'Flatland Follies: An Adjunct Simulator',
   titleBreaks: ['Flatland Follies:', 'An Adjunct Simulator'],
@@ -25,10 +25,10 @@ const ARTICLES = [
   slug: 'flatland-follies-an-adjunct-simulator',
   description: 'This college used to be one of the best in the country. Fifty years later the campus is destitute, they can\'t pay professors, and it\'s filled with decaying art.',
 }, {
-  title: 'Particle Physics: A Brief Primer',
-  titleBreaks: ['Particle Physics:', 'A Brief Primer'],
+  title: 'On Particle Physics',
+  titleBreaks: ['On Physics Physics'],
   author: 'Riccardo Maria Bianchi',
-  slug: 'particle-physics-a-brief-primer',
+  slug: 'on-particle-physics',
   description: 'A CERN particle physicist walks through the history and science of particle physics, and why you should care about it—even outside of the laboratory.'
 
 }, {
@@ -37,12 +37,6 @@ const ARTICLES = [
   author: 'Megan Vo',
   slug: 'anything-that-flies-on-anything-that-moves',
   description: 'The US covertly launched over two million bombing missions over Southeast Asian countries in the 1960s and 70s. Dig into the data behind the assault.'
-}
-// {
-//   title: 'On Dance',
-//   author: 'Sam Petulla',
-//   slug: 'on-dance'
-// }, {
-  ]
+}]
 
 module.exports = ARTICLES;
