@@ -16,7 +16,7 @@ const ARTICLES = [
   title: 'Data Science for Fair Housing',
   titleBreaks: ['Data Science', 'for Fair Housing'],
   author: 'Alyson Powell Key',
-  slug: 'the-data-science-of-housing-equity',
+  slug: 'data-science-for-fair-housing',
   description: "Cities across America covertly exclude racial minorities from majority-white residential neighborhoods, while gentrification drives people of color out of their homes. In Atlanta, a new nonprofit seeks to resist displacement by supporting the city’s most vulnerable residents—but how effective is their project?",
 }, {
   title: 'Flatland Follies: An Adjunct Simulator',
@@ -26,7 +26,7 @@ const ARTICLES = [
   description: 'This college used to be one of the best in the country. Fifty years later the campus is destitute, they can\'t pay professors, and it\'s filled with decaying art.',
 }, {
   title: 'On Particle Physics',
-  titleBreaks: ['On Physics Physics'],
+  titleBreaks: ['On Particle Physics'],
   author: 'Riccardo Maria Bianchi',
   slug: 'on-particle-physics',
   description: 'A CERN particle physicist walks through the history and science of particle physics, and why you should care about it—even outside of the laboratory.'

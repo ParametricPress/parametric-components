@@ -24,7 +24,7 @@ class Recirc extends React.Component {
           <div style={{width: 60, marginRight: '2em', transform: 'rotate(-20deg)'}}>
             <img style={{width: '100%', margin: 0, position: 'relative', top: 6}} src="/issue-01/static/images/diamond.png" />
           </div>
-          <div style={{fontSize: 22, lineHeight: 1.2}}>
+          <div style={{fontSize: 22, lineHeight: 1.2, fontWeight: 'bold'}}>
             More from the Parametric Press
             {/* <img style={{display: 'inline', height: 12, width: 'auto'}} src="static/images/logo.png" />. */}
           </div>
