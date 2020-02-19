@@ -10,7 +10,12 @@ class Footer extends React.Component {
           <img src="https://parametric.press/issue-01/static/images/logo-bg-dark.png" />
           <div className="parametric-footer-link-container">
             <div>
-              <a style={{color: 'white', textDecoration: 'none'}} href="/issue-01/">Issue 01</a>
+              Issues
+              <div style={{position: "absolute", fontWeight: 300}}>
+                <div style={{}}>↓</div>
+                <a style={{color: 'white', textDecoration: 'none'}} href="/issue-01/">01: Science + Society</a><br/>
+                <a style={{color: 'white', textDecoration: 'none'}} href="/issue-02/">02: The Climate Issue</a>
+              </div>
             </div>
             <div>
               <a style={{color: 'white', textDecoration: 'none'}} href="/about/">About</a>
@@ -19,10 +24,10 @@ class Footer extends React.Component {
               <a style={{color: 'white', textDecoration: 'none'}} href="https://parametric.press/rss.xml">RSS</a>
             </div>
             <div>
-              <a style={{color: 'white', textDecoration: 'none'}} href="https://facebook.com/parametric.press"><img style={{position: 'relative', top: '25%', height:18, width: 'auto'}} src="/static/images/facebook.png" /></a>
+              <a style={{color: 'white', textDecoration: 'none'}} href="https://facebook.com/parametric.press"><img style={{position: 'relative', top: '25%', height:18, width: 'auto'}} src="https://parametric.press/static/images/facebook.png" /></a>
             </div>
             <div>
-              <a style={{color: 'white', textDecoration: 'none'}} href="https://twitter.com/parametricpress"><img style={{position: 'relative', top: '25%', height:18, width: 'auto'}} src="/static/images/twitter.png" /></a>
+              <a style={{color: 'white', textDecoration: 'none'}} href="https://twitter.com/parametricpress"><img style={{position: 'relative', top: '25%', height:18, width: 'auto'}} src="https://parametric.press/static/images/twitter.png" /></a>
             </div>
             <div>
               <form
