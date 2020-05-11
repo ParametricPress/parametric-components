@@ -75,7 +75,7 @@ class Nav extends React.PureComponent {
                   <div style={{marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                     <div>
                       <div style={{fontFamily: 'Graphik Web', fontWeight: 500}}>
-                        <a style={{color: '#222'}} href={`/issue-01/${slug}/`}>{formatTitle(titleBreaks)}</a>
+                        <a style={{color: '#222'}} href={`/issue-02/${slug}/`}>{formatTitle(titleBreaks)}</a>
                       </div>
                       <div style={{fontStyle: 'italic', fontWeight: 400, fontFamily: 'Graphik Web'}}>
                         {author}
