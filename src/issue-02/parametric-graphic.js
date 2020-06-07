@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Graphic extends React.Component {
+class ParametricGraphic extends React.Component {
 
   render() {
     const { hasError, idyll, updateProps, ...props } = this.props;
@@ -32,4 +32,4 @@ class Graphic extends React.Component {
   }
 }
 
-module.exports = Graphic;
+module.exports = ParametricGraphic;
