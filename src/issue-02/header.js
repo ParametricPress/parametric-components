@@ -39,7 +39,7 @@ class Header extends React.PureComponent {
                       {props.date}
                     </div>
                   </div>
-                  <div style={{display: 'flex', flexDirection: 'row', color: '#4801FF', fontSize: 12, fontWeight: 500}}>
+                  <div style={{display: 'flex', flexDirection: 'row', color: '#000000', fontSize: 12, fontWeight: 500}}>
                     <div>
                       <div style={{fontWeight: 'bold'}}>
                         Created by
@@ -67,9 +67,12 @@ class Header extends React.PureComponent {
               </div>
             </TextContainer>
           </div>
-          {/* <div className='parametric-header-image' style={{position: 'relative', top: 150}}>
-            <img src={this.props.headerImage ? this.props.headerImage : 'static/images/jpeg.png'} />
-          </div> */}
+          {
+            this.props.headerImage ?
+              <div className='parametric-header-image' style={{position: 'relative', top: 150}}>
+                <img src={this.props.headerImage} />
+              </div> : null
+          }
           {/* <div style={{position: 'absolute', top: 0, right: 0}}> */}
           {/* </div> */}
           <h1 className="hed-rotate">

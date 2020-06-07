@@ -30,22 +30,21 @@ class Nav extends React.PureComponent {
     return (
       <div className="parametric-article-nav">
           <div>
-            {/* <div style={{fontFamily:'Bluu', textDecoration: 'none'}}>Parametric Press</div> */}
-            <a href="/"><img src="static/images/logo-nav.png" style={{display: 'inline', width:238}} /></a>
+            <div style={{fontFamily:'Graphik', textDecoration: 'none'}}>Parametric Press</div>
           </div>
           <div className="parametric-nav-links" style={{
             display: 'flex',
             width: '100%',
             justifyContent: 'space-between',
             fontFamily: 'Graphik Web',
-            textDecoration: 'underline',
-            marginTop: '0.5em'
+            textDecoration: 'none',
+            marginTop: '0.5em',
+            color: '#D8FFA2'
           }}>
-            <a href="/" style={{color: 'black'}}>
-              Issue 02<br/>
+            <a href="/" style={{color: '#D8FFA2'}}>
               The Climate Issue
             </a>
-            <div className='parametric-nav-toc' style={{cursor: 'pointer'}} onClick={this.handleContents}>
+            <div className='parametric-nav-toc' style={{cursor: 'pointer', color: '#222', textDecoration: 'underline'}} onClick={this.handleContents}>
               Table of Contents
             </div>
 
@@ -59,7 +58,7 @@ class Nav extends React.PureComponent {
             bottom: 0,
             padding: '1em',
             paddingTop: '2em',
-            background: '#FFE533',
+            background: '#D8FFA2',
             overflow: 'auto',
             maxWidth: '100vw',
             zIndex: 999,
