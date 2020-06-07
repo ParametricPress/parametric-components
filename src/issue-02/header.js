@@ -76,7 +76,7 @@ class Header extends React.PureComponent {
           {
             this.props.headerVideo ?
               <div className='parametric-header-image' style={{position: 'absolute', top: 150, right: 0}}>
-                <video src={this.props.headerVideo} muted={true} controls={false} autoPlay={true} />
+                <video src={this.props.headerVideo} muted={true} controls={false} autoPlay={true} loop={true} />
               </div> : null
           }
           {/* <div style={{position: 'absolute', top: 0, right: 0}}> */}
