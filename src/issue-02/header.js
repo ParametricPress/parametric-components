@@ -30,7 +30,7 @@ class Header extends React.PureComponent {
                       }
                     </h1>
                 </div>
-                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px'}}>
+                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', marginLeft: -50}}>
                   <div>
                     <div className="parametric-long-title" >
                       {formatTitle(this.props.longTitle)}
@@ -69,7 +69,7 @@ class Header extends React.PureComponent {
           </div>
           {
             this.props.headerImage ?
-              <div className='parametric-header-image' style={{position: 'relative', top: 150}}>
+              <div className='parametric-header-image' style={{position: 'absolute', top: 150, right: 0}}>
                 <img src={this.props.headerImage} />
               </div> : null
           }

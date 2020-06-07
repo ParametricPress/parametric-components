@@ -38,7 +38,6 @@ class Nav extends React.PureComponent {
             justifyContent: 'space-between',
             fontFamily: 'Graphik Web',
             textDecoration: 'none',
-            marginTop: '0.5em',
             color: '#D8FFA2'
           }}>
             <a href="/" style={{color: '#D8FFA2'}}>
