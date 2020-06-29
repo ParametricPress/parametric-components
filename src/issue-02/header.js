@@ -13,12 +13,12 @@ class Header extends React.PureComponent {
   render() {
     const {longTitle, headerImage, headerVideo, ...props} = this.props;
     return (
-      <div className={'article-header'} style={{marginTop: 0}}>
+      <div className={'article-header'} style={{marginTop: 0, maxWidth: 600, margin: '0 auto'}}>
         <div className="parametric-header-text">
           <div className="parametric-header-hed" style={{position: 'relative', zIndex: 2}}>
             <TextContainer {...props}>
               <div style={{position: 'relative', width: 720}}>
-                <div style={{position: 'absolute', width: '100%', left: '-3em'}}>
+                <div style={{position: 'absolute', width: '100%', left: '-3em', textAlign: 'center'}}>
                     <h1 className={'hed'}>
                       {
                         formatTitle(this.props.title)
@@ -30,7 +30,7 @@ class Header extends React.PureComponent {
                       }
                     </h1>
                 </div>
-                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', marginLeft: -50}}>
+                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', marginLeft: -50, textAlign: 'center'}}>
                   <div>
                     <div className="parametric-long-title" >
                       {formatTitle(this.props.longTitle)}
@@ -67,18 +67,6 @@ class Header extends React.PureComponent {
               </div>
             </TextContainer>
           </div>
-          {
-            this.props.headerImage ?
-              <div className='parametric-header-image' style={{position: 'absolute', top: 150, right: 0}}>
-                <img src={this.props.headerImage} />
-              </div> : null
-          }
-          {
-            this.props.headerVideo ?
-              <div className='parametric-header-image' style={{position: 'absolute', top: 150, right: 0}}>
-                <video src={this.props.headerVideo} muted={true} controls={false} autoPlay={true} loop={true} />
-              </div> : null
-          }
           {/* <div style={{position: 'absolute', top: 0, right: 0}}> */}
           {/* </div> */}
           <h1 className="hed-rotate">
@@ -92,6 +80,18 @@ class Header extends React.PureComponent {
             {this.props.dek}
           </div>
         </TextContainer>
+
+        {
+            this.props.headerImage ?
+              <div className='parametric-header-image' style={{position: 'absolute', top: 0, right: 0, left: 0, right: 0, bottom: 0, background: `url(${this.props.headerImage})`}}>
+              </div> : null
+          }
+          {
+            this.props.headerVideo ?
+              <div className='parametric-header-image' style={{position: 'absolute', top: 0, right: 0, left: 0, right: 0, bottom: 0, zIndex: 10}}>
+                <video src={this.props.headerVideo} muted={true} controls={false} autoPlay={true} loop={true} style={{width: '100%', height: '100vh'}} />
+              </div> : null
+          }
       </div>
     );
   }

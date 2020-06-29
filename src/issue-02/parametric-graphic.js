@@ -3,18 +3,18 @@ import React from 'react';
 class ParametricGraphic extends React.Component {
 
   render() {
-    const { hasError, idyll, updateProps, ...props } = this.props;
+    const { hasError, idyll, updateProps, style, ...props } = this.props;
     return (
-      <div className="parametric-graphic">
+      <div className="parametric-graphic" style={{...style}}>
 
         <div className="parametric-graphic-hed">
           {props.hed}
         </div>
-        
+
         <div className="parametric-graphic-subhed">
           {props.subhed}
         </div>
-        
+
         {props.children}
 
         {props.source ? (
