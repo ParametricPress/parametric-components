@@ -13,73 +13,46 @@ class Header extends React.PureComponent {
   render() {
     const {longTitle, headerImage, headerVideo, ...props} = this.props;
     return (
-      <div className={'article-header'} style={{marginTop: 0, maxWidth: 600, margin: '0 auto'}}>
+      <div className={'article-header'} style={{marginTop: 0}}>
         <div className="parametric-header-text">
-          <div className="parametric-header-hed" style={{position: 'relative', zIndex: 2}}>
-            <TextContainer {...props}>
-              <div style={{position: 'relative', width: 720}}>
-                <div style={{position: 'absolute', width: '100%', left: '-3em', textAlign: 'center'}}>
-                    <h1 className={'hed'}>
-                      {
-                        formatTitle(this.props.title)
-                      }
-                    </h1>
-                    <h1 className={'hed hed-offset'}>
-                      {
-                        formatTitle(this.props.title)
-                      }
-                    </h1>
+          <div className="parametric-header-hed">
+            <div className="parametric-header-hed-text" style={{fontSize: '12px', lineHeight: '20px' }}>
+              <div>
+                <div style={{fontSize: 16, fontWeight: 500, marginTop: 0, marginBottom: '0.5em'}}>
+                  {props.date}
                 </div>
-                <div className="parametric-header-hed-text" style={{width: 720, maxWidth: 720, fontSize: '12px', lineHeight: '20px', marginLeft: -50, textAlign: 'center'}}>
-                  <div>
-                    <div className="parametric-long-title" >
-                      {formatTitle(this.props.longTitle)}
-                    </div>
-                    <div style={{fontSize: 16, fontWeight: 'bold', marginTop: 0, marginBottom: '2em'}}>
-                      {props.date}
-                    </div>
-                  </div>
-                  <div style={{display: 'flex', flexDirection: 'row', color: '#000000', fontSize: 12, fontWeight: 500}}>
-                    <div>
-                      <div style={{fontWeight: 'bold'}}>
-                        Created by
-                      </div>
-                      <div>
-                        {
-                          this.props.authors.map(({name, role, url}) => {
-                            return <div key={name}><a href={url}>{name}</a></div>
-                          })
-                        }
-                      </div>
-                    </div>
-                    <div style={{marginLeft: '4em'}}>
-                      <div style={{fontWeight: 'bold'}}>
-                        Metadata
-                      </div>
-                      <div>
-                        <a href={this.props.source}>Source Code</a><br/>
-                        <a href={this.props.archive}>Offline Archive</a><br/>
-                        <a href={this.props.doi}>DOI</a>
-                      </div>
-                    </div>
-                  </div>
+                <div className="parametric-long-title" >
+                  {formatTitle(this.props.longTitle)}
+                </div>
+                <div className="parametric-article-dek">
+                  {this.props.dek}
                 </div>
               </div>
-            </TextContainer>
+            </div>
+            <div className={'parametric-header-metadata-component'} style={{display: 'flex', flexDirection: 'row', fontSize: 12, fontWeight: 500, lineHeight: 1.5}}>
+                <div style={{display: 'flex', flexDirection: 'row' }}>
+                  <div style={{fontWeight: 'bold'}}>
+                    Created by
+                  </div>
+                  <div>
+                    {
+                      this.props.authors.map(({name, role, url}) => {
+                        return <div key={name}><a href={url}>{name}</a></div>
+                      })
+                    }
+                  </div>
+                </div>
+                <div style={{display: 'flex', flexDirection: 'row' }}>
+                  <div style={{fontWeight: 'bold'}}>
+                    Metadata
+                  </div>
+                  <a href={this.props.source}>Source Code</a>
+                  <a href={this.props.archive}>Offline Archive</a>
+                  <a href={this.props.doi}>DOI</a>
+                </div>
+              </div>
           </div>
-          {/* <div style={{position: 'absolute', top: 0, right: 0}}> */}
-          {/* </div> */}
-          <h1 className="hed-rotate">
-            {
-              formatTitle(this.props.title)
-            }
-          </h1>
         </div>
-        <TextContainer {...props}>
-          <div className="parametric-article-dek" style={{fontFamily: 'Graphik Web'}}>
-            {this.props.dek}
-          </div>
-        </TextContainer>
 
         {
             this.props.headerImage ?

@@ -30,7 +30,7 @@ class Nav extends React.PureComponent {
     return (
       <div className="parametric-article-nav">
           <div>
-            <div style={{fontFamily:'Graphik', textDecoration: 'none'}}>Parametric Press</div>
+            <div style={{fontFamily:'Graphik Web', textDecoration: 'none'}}>Parametric Press</div>
           </div>
           <div className="parametric-nav-links" style={{
             display: 'flex',
@@ -40,7 +40,7 @@ class Nav extends React.PureComponent {
             textDecoration: 'none',
             color: '#D8FFA2'
           }}>
-            <a href="/" style={{color: '#D8FFA2'}}>
+            <a href="/" >
               The Climate Issue
             </a>
             <div className='parametric-nav-toc' style={{cursor: 'pointer', color: '#222', textDecoration: 'underline'}} onClick={this.handleContents}>

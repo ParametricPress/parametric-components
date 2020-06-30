@@ -15,7 +15,7 @@ const ARTICLES = [
     title: 'Drought of the Sinking Delta - The Mekong Delta is Too Dry Despite Rising Sea Levels',
     titleBreaks: ['Drought of the Sinking Delta', 'The Mekong Delta is Too Dry Despite Rising Sea Levels'],
     author: 'Christina Orieschnig',
-    slug: 'drought-of-the-sinking-delta',
+    slug: 'sinking-delta',
     description: "TK",
   }, {
     title: 'The Environmental Impact of Digital Streaming',
