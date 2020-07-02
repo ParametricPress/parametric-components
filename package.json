@@ -1,6 +1,6 @@
 {
   "name": "parametric-components",
-  "version": "2.1.6",
+  "version": "2.1.9",
   "description": "",
   "main": "header.js",
   "scripts": {
@@ -20,12 +20,12 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "concurrently": "^4.1.0",
-    "cross-env": "^5.2.0",
-    "rimraf": "^2.6.3"
+    "concurrently": "^4.1.2",
+    "cross-env": "^5.2.1",
+    "rimraf": "^2.7.1"
   },
   "dependencies": {
-    "idyll-components": "^3.5.4",
-    "react-tooltip": "^3.10.0"
+    "idyll-components": "^3.12.1",
+    "react-tooltip": "^3.11.6"
   }
 }
