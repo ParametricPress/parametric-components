@@ -1,7 +1,7 @@
 const ARTICLES = [
   {
-    title: 'Carbon History',
-    titleBreaks: ['Carbon History'],
+    title: 'Your Personalized Carbon History',
+    titleBreaks: ['Your Personalized', 'Carbon History'],
     author: 'Aatish Bhatia',
     slug: 'carbon-history',
     description: 'TK',
@@ -25,7 +25,7 @@ const ARTICLES = [
     description: 'TK',
   }, {
     title: 'The 20 Corporations Driving Climate Change',
-    titleBreaks: ['The 20 Corporations Driving Climate Change'],
+    titleBreaks: ['The Twenty Corporations', 'Driving Climate Change'],
     author: 'Geoffrey Litt, Seth Thompson',
     slug: 'corporate-cause',
     description: 'TK'
