@@ -1,31 +1,31 @@
 const ARTICLES = [
   {
-    title: 'Carbon History',
-    titleBreaks: ['Carbon History'],
+    title: 'Your Personalized Carbon History',
+    titleBreaks: ['Your Personalized', 'Carbon History'],
     author: 'Aatish Bhatia',
     slug: 'carbon-history',
     description: 'TK',
   }, {
-    title: 'Algae: The Tiny CO2 killer?',
-    titleBreaks: ['Algae: The Tiny CO2 killer?'],
+    title: 'Algae: The Tiny CO₂ killer',
+    titleBreaks: ['Algae: The Tiny CO₂ killer'],
     author: 'Benjamin Cooley',
     slug: 'algae',
     description: 'TK',
   }, {
-    title: 'Drought of the Sinking Delta - The Mekong Delta is Too Dry Despite Rising Sea Levels',
-    titleBreaks: ['Drought of the Sinking Delta', 'The Mekong Delta is Too Dry Despite Rising Sea Levels'],
+    title: 'Drought of the Sinking Delta',
+    titleBreaks: ['Drought of the Sinking Delta'],
     author: 'Christina Orieschnig',
     slug: 'sinking-delta',
     description: "TK",
   }, {
-    title: 'The Environmental Impact of Digital Streaming',
-    titleBreaks: ['Environmental Impact:', 'Digital Streaming'],
+    title: 'The Cost of Netflix and Chill',
+    titleBreaks: ['The Cost of Netflix and Chill'],
     author: 'Halden Lin, Aishwarya Nirmal, Hathi Shobhit, Lilian Liang',
     slug: 'environmental-impact-streaming',
     description: 'TK',
   }, {
-    title: 'Corporate Cause: The 20 Companies Driving Climate Change',
-    titleBreaks: ['Corporate Cause:', 'The 20 Companies Driving Climate Change'],
+    title: 'The 20 Corporations Driving Climate Change',
+    titleBreaks: ['The Twenty Corporations', 'Driving Climate Change'],
     author: 'Geoffrey Litt, Seth Thompson',
     slug: 'corporate-cause',
     description: 'TK'
