@@ -34,10 +34,10 @@ class Header extends React.PureComponent {
                   <div style={{fontWeight: 'bold'}}>
                     Created by
                   </div>
-                  <div>
+                  <div style={{display: 'flex', flexDirection: 'row' }}>
                     {
                       this.props.authors.map(({name, role, url}) => {
-                        return <div key={name}><a href={url}>{name}</a></div>
+                        return <div key={name} style={{marginRight: '0.5em'}}><a href={url}>{name}</a></div>
                       })
                     }
                   </div>

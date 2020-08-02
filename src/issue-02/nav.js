@@ -43,7 +43,7 @@ class Nav extends React.PureComponent {
             <a href="/" >
               The Climate Issue
             </a>
-            <div className='parametric-nav-toc' style={{cursor: 'pointer', color: '#222', textDecoration: 'underline'}} onClick={this.handleContents}>
+            <div className='parametric-nav-toc' style={{cursor: 'pointer', textDecoration: 'underline'}} onClick={this.handleContents}>
               Table of Contents
             </div>
 
