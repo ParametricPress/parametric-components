@@ -11,7 +11,7 @@ class Footer extends React.Component {
           <div className="parametric-footer-link-container">
             <div>
               Issues
-              <div class="past-issue-container" style={{fontWeight: 300}}>
+              <div className="past-issue-container" style={{fontWeight: 300}}>
                 <div style={{}}>↓</div>
                 <a style={{color: 'white', textDecoration: 'none'}} href="/issue-01/">01: Science + Society</a><br/>
                 <a style={{color: 'white', textDecoration: 'none'}} href="/issue-02/">02: The Climate Issue</a>
