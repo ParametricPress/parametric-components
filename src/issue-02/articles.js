@@ -21,13 +21,13 @@ const ARTICLES = [
     title: 'The Cost of Netflix and Chill',
     titleBreaks: ['The Cost of Netflix and Chill'],
     author: 'Halden Lin, Aishwarya Nirmal, Hathi Shobhit, Lilian Liang',
-    slug: 'environmental-impact-streaming',
+    slug: 'streaming',
     description: 'TK',
   }, {
     title: 'The 20 Corporations Driving Climate Change',
     titleBreaks: ['The Twenty Corporations', 'Driving Climate Change'],
     author: 'Geoffrey Litt, Seth Thompson',
-    slug: 'corporate-cause',
+    slug: 'corporations',
     description: 'TK'
   }]
 
