@@ -43,8 +43,8 @@ class Nav extends React.PureComponent {
             <a href="/" >
               The Climate Issue
             </a>
-            <div className='parametric-nav-toc' style={{cursor: 'pointer', textDecoration: 'underline'}} onClick={this.handleContents}>
-              Table of Contents
+            <div className='parametric-nav-toc' style={{cursor: 'pointer', textDecoration: 'none', fontSize: 48, position: 'relative', top: -18}} onClick={this.handleContents}>
+              ☰
             </div>
 
           </div>
@@ -64,7 +64,7 @@ class Nav extends React.PureComponent {
             transition: 'all 0.75s'
             }}>
             <div onClick={this.handleContents} style={{ cursor: 'pointer', textAlign: 'right', textDecoration: 'underline', fontFamily: 'Graphik Web', marginBottom: '1em' }}>
-              Table of Contents
+              ✖
             </div>
             {
               ARTICLES.map(({title, titleBreaks, slug, author}, i) => {
