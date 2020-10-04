@@ -6,8 +6,8 @@ const ARTICLES = [
     slug: 'carbon-history',
     description: 'TK',
   }, {
-    title: 'Algae: The Tiny CO₂ killer',
-    titleBreaks: ['Algae: The Tiny CO₂ killer'],
+    title: 'Algae: The Tiny CO₂ Killer',
+    titleBreaks: ['Algae: The Tiny CO₂ Killer'],
     author: 'Benjamin Cooley',
     slug: 'algae',
     description: 'TK',
@@ -20,7 +20,7 @@ const ARTICLES = [
   }, {
     title: 'The Cost of Netflix and Chill',
     titleBreaks: ['The Cost of Netflix and Chill'],
-    author: 'Halden Lin, Aishwarya Nirmal, Hathi Shobhit, Lilian Liang',
+    author: 'Halden Lin, Aishwarya Nirmal, Shobhit Hathi, Lilian Liang',
     slug: 'streaming',
     description: 'TK',
   }, {
