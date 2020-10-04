@@ -13,7 +13,7 @@ class ParametricGraphic extends React.Component {
       return (
         <div className="parametric-graphic-source-label-wrapper">
           <div className="parametric-graphic-source-label">SOURCE</div>
-          <div className="parametric-graphic-source-citation">{props.source}</div>
+          <div className="parametric-graphic-source-citation">{source}</div>
         </div>
       )
     }
