@@ -51,8 +51,8 @@ class Nav extends React.PureComponent {
           <div className="parametric-issue-toc" style={{
             // display: this.state.showContent ? 'block' : 'none',
             position: 'fixed',
-            width: 500,
-            right: this.state.showContent ? 0 : -500,
+            width: 533,
+            right: this.state.showContent ? 0 : -533,
             top: 0,
             bottom: 0,
             padding: '1em',
