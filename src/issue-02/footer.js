@@ -23,10 +23,10 @@ class Footer extends React.Component {
             <div>
               <a style={{color: 'white', textDecoration: 'none'}} href="https://parametric.press/rss.xml">RSS</a>
             </div>
-            <div>
+            <div className="parametric-footer-social-link">
               <a style={{color: 'white', textDecoration: 'none'}} href="https://facebook.com/parametric.press"><img style={{position: 'relative', top: '25%', height:18, width: 'auto'}} src="https://parametric.press/static/images/facebook.png" /></a>
             </div>
-            <div>
+            <div className="parametric-footer-social-link">
               <a style={{color: 'white', textDecoration: 'none'}} href="https://twitter.com/parametricpress"><img style={{position: 'relative', top: '25%', height:18, width: 'auto'}} src="https://parametric.press/static/images/twitter.png" /></a>
             </div>
             <div>

@@ -64,7 +64,7 @@ class Nav extends React.PureComponent {
             transition: 'all 0.75s'
             }}>
 
-            <div onClick={this.handleContents} style={{ cursor: 'pointer', textAlign: 'right', fontFamily: 'Graphik Web', position: 'relative', top: '-1.25em', fontSize: 36, marginBottom: 0 }}>
+            <div onClick={this.handleContents} style={{ cursor: 'pointer', textAlign: 'right', fontFamily: 'Graphik Web', position: 'relative', top: '-1em', fontSize: 36, marginBottom: 0 }}>
               ✖
             </div>
             {
