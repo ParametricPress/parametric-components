@@ -20,20 +20,20 @@ class Recirc extends React.Component {
     return (
       <div className="parametric-recirc-module">
         <div style={{display: 'flex', flexDirection: 'row'}}>
-          <div style={{fontSize: 32, lineHeight: '48px', fontWeight: 'bold'}}>
+          <div style={{fontSize: 18, lineHeight: 1.2, fontWeight: 'bold'}}>
             More from the Parametric Press
           </div>
         </div>
-        <div style={{fontSize: 24, lineHeight: '32px', marginLeft: 0}}>
+        <div style={{fontSize: 18, lineHeight: 1.2, marginLeft: 0}}>
           {
             this.getArticles().map((article) => {
               return (
                 <div key={article.slug} className="parametric-recirc-article">
                   <a style={{color: '#222'}} href={`/issue-01/${article.slug}/`}>
-                    <div style={{fontWeight: 500, marginTop: '1em'}}>
+                    <div style={{fontWeight: 500}}>
                       {article.title}
                     </div>
-                    <div style={{fontWeight: 400, fontSize: 16, lineHeight: '24px', textDecoration: 'none'}}>
+                    <div style={{fontWeight: 400, fontSize: 16, lineHeight: 1.2, textDecoration: 'none'}}>
                       {article.description}
                     </div>
                   </a>
