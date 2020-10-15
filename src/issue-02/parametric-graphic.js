@@ -46,7 +46,7 @@ class ParametricGraphic extends React.Component {
   render() {
     const { hasError, idyll, updateProps, style, ...props } = this.props;
     return (
-      <div className="parametric-graphic" style={{...style}}>
+      <div className={`parametric-graphic ${props.className || ''}`} style={{...style}}>
 
         <div className="parametric-graphic-hed">
           {props.hed}
