@@ -91,7 +91,7 @@ class Nav extends React.PureComponent {
             <div style={{textAlign: 'right'}}>
               <div style={{marginTop: '2em', marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                 <div style={{fontFamily: 'Graphik Web', fontWeight: 500}}>
-                  <a style={{color: '#222'}} href={`/about/`}>About Us</a>
+                  <a style={{color: '#222'}} href={`/issue-02/editors-note/`}>Editors’ Note</a>
                 </div>
               </div>
             </div>
