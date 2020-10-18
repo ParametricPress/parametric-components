@@ -25,7 +25,7 @@ const ARTICLES = [
     description: "Things are out of joint in the delta of the Mekong, Southeast Asia’s largest river.",
   }, {
     title: 'The Hidden Cost of Digital Consumption',
-    titleBreaks: ['The Hidden Cost of Digital Consumption'],
+    titleBreaks: ['The Hidden Cost',  'of Digital Consumption'],
     author: 'Halden Lin, Aishwarya Nirmal, Shobhit Hathi, Lilian Liang',
     slug: 'streaming',
     description: 'How much carbon dioxide is released when you load this article? Digital doesn’t mean green.',
