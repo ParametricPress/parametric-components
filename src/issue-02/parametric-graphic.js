@@ -26,11 +26,11 @@ class ParametricGraphic extends React.Component {
       <div className="parametric-graphic-source-label-wrapper">
         <div className="parametric-graphic-source-label">SOURCE</div>
         <div className="parametric-graphic-source-citation">
-          {source.map((s) => {
+          {source.map((s, idx) => {
             if (typeof s === 'string') {
-              return <span key={s}>{s}</span>;
+              return <span key={`${idx}-${s}`}>{s}</span>;
             }
-            return <a key={s.label} href={s.url}>{s.label}</a>
+            return <a key={`${idx}-${s.label}`} href={s.url}>{s.label}</a>
           }).reduce((memo, el, idx, arr) => {
             memo.push(el);
             if (idx < arr.length - 1) {
