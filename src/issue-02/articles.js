@@ -10,7 +10,7 @@ const ARTICLES = [
     titleBreaks: ['The Corporations', 'Behind Climate Change'],
     author: 'Geoffrey Litt, Seth Thompson',
     slug: 'corporations',
-    description: 'Seven simple demands to hold the dirtiest companies accountable.'
+    description: 'Seven simple demands to hold fossil fuel companies accountable.'
   }, {
     title: 'Tiny Algae and the Political Theatre of Planting One Trillion Trees',
     titleBreaks: ['Tiny Algae and the Political Theatre', 'of Planting One Trillion Trees'],
