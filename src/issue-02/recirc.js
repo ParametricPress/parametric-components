@@ -29,7 +29,7 @@ class Recirc extends React.Component {
             this.getArticles().map((article) => {
               return (
                 <div key={article.slug} className="parametric-recirc-article">
-                  <a style={{color: '#222'}} href={`/issue-01/${article.slug}/`}>
+                  <a style={{color: '#222'}} href={`/issue-02/${article.slug}/`}>
                     <div style={{fontWeight: 500}}>
                       {article.title}
                     </div>
