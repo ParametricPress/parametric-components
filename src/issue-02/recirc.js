@@ -20,7 +20,7 @@ class Recirc extends React.Component {
     return (
       <div className="parametric-recirc-module">
         <div style={{display: 'flex', flexDirection: 'row'}}>
-          <div style={{fontSize: 18, lineHeight: 1.2, fontWeight: 'bold'}}>
+          <div style={{fontSize: 22, lineHeight: 1.2, fontFamily: 'Editorial New'}}>
             More from the Parametric Press
           </div>
         </div>
