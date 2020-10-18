@@ -1,19 +1,19 @@
 const ARTICLES = [
   {
-    title: 'Your Personalized Carbon History',
-    titleBreaks: ['Your Personalized', 'Carbon History'],
+    title: 'Your Personal Carbon History',
+    titleBreaks: ['Your Personal', 'Carbon History'],
     author: 'Aatish Bhatia',
     slug: 'carbon-history',
-    description: 'Why we\'re living through an extraordinary time.',
+    description: 'You’ve lived through a period of unprecedented carbon emissions.',
   }, {
-    title: '20 Companies Driving Climate Change',
-    titleBreaks: ['20 Companies', 'Driving Climate Change'],
+    title: 'The Corporations Behind Climate Change',
+    titleBreaks: ['The Corporations', 'Behind Climate Change'],
     author: 'Geoffrey Litt, Seth Thompson',
     slug: 'corporations',
-    description: 'The fossil fuels companies behind climate change.'
+    description: 'Seven simple demands to hold the dirtiest companies accountable.'
   }, {
-    title: 'Algae: The Tiny CO₂ Killer',
-    titleBreaks: ['Algae: The Tiny CO₂ Killer'],
+    title: 'Tiny Algae and the Political Theatre of Planting One Trillion Trees',
+    titleBreaks: ['Tiny Algae and the Political Theatre', 'of Planting One Trillion Trees'],
     author: 'Benjamin Cooley',
     slug: 'algae',
     description: 'To fight climate change, it’s time to start thinking big by thinking small.',
@@ -28,7 +28,7 @@ const ARTICLES = [
     titleBreaks: ['The Hidden Cost of Digital Consumption'],
     author: 'Halden Lin, Aishwarya Nirmal, Shobhit Hathi, Lilian Liang',
     slug: 'streaming',
-    description: 'Digital doesn\'t mean green.',
+    description: 'How much carbon dioxide is released when you load this article? Digital doesn’t mean green.',
   }]
 
 module.exports = ARTICLES;

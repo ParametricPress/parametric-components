@@ -28,9 +28,9 @@ class ParametricGraphic extends React.Component {
         <div className="parametric-graphic-source-citation">
           {source.map((s) => {
             if (typeof s === 'string') {
-              return s;
+              return <span key={s}>s</span>;
             }
-            return <a href={s.url}>{s.label}</a>
+            return <a key={s.label} href={s.url}>{s.label}</a>
           }).reduce((memo, el, idx, arr) => {
             memo.push(el);
             if (idx < arr.length - 1) {
