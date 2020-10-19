@@ -12,8 +12,8 @@ const ARTICLES = [
     slug: 'corporations',
     description: 'Seven simple demands to hold fossil fuel companies accountable.'
   }, {
-    title: 'Tiny Algae and the Political Theatre of Planting One Trillion Trees',
-    titleBreaks: ['Tiny Algae and the Political Theatre', 'of Planting One Trillion Trees'],
+    title: 'Tiny Algae and the Political Theater of Planting One Trillion Trees',
+    titleBreaks: ['Tiny Algae and the Political Theater', 'of Planting One Trillion Trees'],
     author: 'Benjamin Cooley',
     slug: 'algae',
     description: 'To fight climate change, it’s time to start thinking big by thinking small.',
